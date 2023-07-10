@@ -1,0 +1,90 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color:rgb(145, 145, 236);
+}
+
+@keyframes slider {
+    
+    from{
+        margin-left: 850px;
+        /* background-color: orange; */
+
+    }
+    to{
+        margin-right: 700px;
+        /* background-color: rgb(0, 68, 255); */
+        
+    }
+    
+}
+
+h1{
+    /* text-align: center; */
+    color: white;
+    animation-name: slider;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    transition:ease-in-out;
+}
+
+.display-clock{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.for-display{
+    margin: 10px;
+    margin-top: 50px;
+    /* border: 1px solid orange; */
+}
+
+
+/* this is button div */
+.stop-watch{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 30px;
+    margin-top: 100px;
+    /* border: 1px solid red; */
+    /* border: 1px solid rgb(0, 0, 0); */
+}
+
+#hours , #minuts , #seconds , #miliseconds{
+    /* background-color: rgb(236, 165, 165); */
+    width: 70px;
+    font-size: 52px;
+}
+
+span{
+    margin-top: 80px;
+    /* margin-left: 0px; */
+}
+
+.for-display{
+    width: 30px;
+    text-align: center;
+}
+
+button{
+    width: 120px;
+    height: 40px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 10px 2px  black;
+    margin: 10px;
+
+}
+
+button:hover{
+    background-color: rgb(209, 209, 209);
+    border: 1px solid green;
+    font-size: 20px;
+    
+
+}
